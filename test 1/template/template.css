@@ -1,0 +1,100 @@
+header {
+  height: 200vh;
+}
+
+.container {
+  clip: rect(0, auto, auto, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+}
+
+.container_solid {
+  background: white;
+  top: 0;
+}
+
+.title {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  padding: 80px;
+  
+}
+
+.container_solid .title h1 {
+  /* the text background */
+  background: url(/images/photo-1575058752200-a9d6c0f41945.jpg);
+  background-size: 120vw auto;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  background-clip: text;
+ 
+}
+
+.container_image {
+  background-image: url(/images/rsaaxzncvodjhsnbz8hn.webp);
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  top: 100vh;
+}
+
+.container_image .title h1 {
+  color: white;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+section h2 {
+   font-family: Arial, sans-serif;
+}
+
+section p {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Media query for mindre skjermer */
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 12vw;
+    padding: 10% 0;
+  }
+}
+
+/* Media query for større skjermer */
+@media (min-width: 1200px) {
+  .title h1 {
+    font-size: 4vw;
+  }
+}
+
+
+
+
+
+
+  
